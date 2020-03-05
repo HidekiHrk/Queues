@@ -40,5 +40,5 @@ class Queue:
 		while len(self) > 0:
 			yield self.next()
 	
-	# def __repr__(self):
-	# 	return f"<{__name__}.{type(self).__name__} values: {len(self)}>"
+	def __repr__(self):
+		return f"<{__name__}.{type(self).__name__} values: {len(self)}>"

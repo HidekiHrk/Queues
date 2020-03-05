@@ -1,5 +1,1 @@
-from queues import Queue
-
-def main():
-
-main()
+__import__('bank').main()
