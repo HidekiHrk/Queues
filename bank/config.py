@@ -1,5 +1,5 @@
 dynamic = {
-    "activated":True, # randomiza o número de clientes que chegam e são atendidos por minuto.
+    "activated":False, # randomiza o número de clientes que chegam e são atendidos por minuto.
     "client_quantity_range":[4,16],
     "client_resolve_range":[1,2]
 }

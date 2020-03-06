@@ -4,7 +4,7 @@ class Caixa(Queue):
     __lastId = 0
 
     def __init__(self):
-        super().__init__(0)
+        super().__init__()
         Caixa.__lastId += 1
         self.id = Caixa.__lastId
         self.__registers = []

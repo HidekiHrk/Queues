@@ -7,7 +7,7 @@ class Time(object):
         return cls.__instance
 
     def __init__(self, start=0):
-        if(self.__initialized): return;
+        if(self.__initialized): return
         self.__initialized = True
         self.__value = start
     

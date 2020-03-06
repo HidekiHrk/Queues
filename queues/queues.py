@@ -27,11 +27,16 @@ class Queue:
 		return self.__data[::-1]
 
 	def clear(self, quantity=0):
-		if quantity == 0:
-			self.__data = []
-		else:
-			self.__data = self.__data[:-quantity]
-		return len(self.__data)
+		self.__data = self.__data[:-quantity]
+		return len(self)
+
+	def remove(self, item):
+		item_list = []
+		for i in self:
+			if i == item:
+				break
+			item_list.append(i)
+		return item_list
 
 	def __len__(self):
 		return len(self.__data)

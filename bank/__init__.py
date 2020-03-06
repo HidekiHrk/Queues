@@ -4,7 +4,6 @@ from bank.client import Client
 from bank.config import dynamic, client_quantity, client_resolve_limit
 from random import randint
 
-
 def addClients(caixas):
     if dynamic['activated']:
         quantity = randint(*dynamic["client_quantity_range"])
