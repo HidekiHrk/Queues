@@ -14,7 +14,7 @@ def main():
             'add':lambda: estacionamento.add(input("Placa: ")),
             'rm':lambda: estacionamento.removeCar(input("Placa: ")),
             's':lambda: print("Carros:", estacionamento.getCars() if len(estacionamento) else "Estacionamento Vazio"),
-            'sair':lambda: exit()
+            'sair': exit
         }
         choice = choose(choose_dict.keys())
         choose_dict.get(choice)()

@@ -1,8 +1,8 @@
 from queues import Queue
 
 class FilaDeEspera:
-    def __init__(self, *args, **kwargs):
-        self.__prioridades = [Queue() for _ in range(5)]
+    def __init__(self, prioridades=5):
+        self.__prioridades = [Queue() for _ in range(prioridades)]
 
     def adicionarPaciente(self, paciente):
         self.__prioridades[paciente.prioridade].add(paciente)
