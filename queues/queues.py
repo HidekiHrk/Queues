@@ -42,3 +42,17 @@ class Queue:
 	
 	def __repr__(self):
 		return f"<{__name__}.{type(self).__name__} values: {len(self)}>"
+
+	# <> >= <= comparators:
+
+	def __lt__(self, other):
+		return len(self) < len(other)
+
+	def __gt__(self, other):
+		return len(self) > len(other)
+
+	def __le__(self, other):
+		return len(self) <= len(other)
+
+	def __ge__(self, other):
+		return len(self) >= len(other)

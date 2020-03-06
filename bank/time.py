@@ -3,10 +3,13 @@ class Time(object):
     def __new__(cls, *args, **kwargs):
         if not cls.__instance:
             cls.__instance = super().__new__(cls, *args, **kwargs)
+            cls.__instance.__initialized = False
         return cls.__instance
 
     def __init__(self, start=0):
-        self.__value = 0
+        if(self.__initialized): return;
+        self.__initialized = True
+        self.__value = start
     
     @property
     def now(self):
