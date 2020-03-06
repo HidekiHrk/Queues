@@ -1,7 +1,7 @@
 #!python3
 from sys import argv as args
 
-code_list = ['bank', 'estacionamento']
+code_list = ['bank', 'estacionamento', 'hospital']
 
 if len(args) > 1:
     if args[1] not in code_list:
