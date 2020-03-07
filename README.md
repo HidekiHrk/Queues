@@ -2,7 +2,7 @@
 
 #### Instruções:
 
-- Executar o main.py (kkkk óbvio);
+- Executar o main.py com os parâmetros especificados na sessão "Questões" abaixo;
 - Modificar o arquivo bank/config.py;
     - Mudar a variável "dynamic" para definir a precisão dos resultados;
 - Modificar o arquivo eventos/config.py
@@ -16,4 +16,3 @@
 
 Dependências:
 - Python >= 3.6
-
